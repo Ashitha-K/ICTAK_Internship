@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Prediction </title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<h2>Loyalty Score prediction</h2>
+<body>
+   <form action="/predict" method="post">
+
+    <label>Loyalty Score : </label>
+    <input type="number" name="Loyalty Score"><br><br>
+
+    <label> Total spent : </label>
+    <input type="number" name="Total spent"><br><br>
+    
+    
+
+    <label>Discount % : </label>
+    <input type="number" name="Discount (%)"><br><br>
+    <label>Age : </label>
+    <input type="number" name="Age"><br><br>
+
+    <label>Items Purchased : </label>
+    <input type="number" name="Items Purchased"><br><br>
+
+        
+    <button type="submit">Predict</button><br><br>
+    
+    <h1>Satisfaction Score : {{Prediction}}</h1>
+
+
+   </form>
+</body>
+</html>
